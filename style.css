@@ -1,0 +1,85 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*, 
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background: linear-gradient(10deg, #f09afc, #fde846);
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    font-family: 'Dosis', sans-serif;
+}
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+.convertor-body{
+    background: rgba(255, 255, 255, 0.349);
+    height: 400px;
+    width: 600px;
+    border-radius: 10%;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.253);
+    text-align: center;
+}
+.convertor-body .button{
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.185);
+    background: rgb(122, 162, 248);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 100ms ease;
+}
+.button:hover{
+    height: 35px;
+    width: 130px;
+}
+.button:active{
+    height: 30px;
+    width: 120px;
+}
+.title{
+    padding: 30px;
+    font-size: 30px;
+    pointer-events: none;
+}
+.label-c{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.value input{
+    width: 30%;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    text-align: center;
+    font-size: 20px;
+    color: #2c2c2c;
+}
+.value input:focus{
+    border: 2px solid #ffffff;
+    outline: none;
+}
+.value h2{
+    font-size: 40px;
+    padding: 20px;
+}
+
